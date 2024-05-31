@@ -1,0 +1,82 @@
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.App {
+  text-align: center;
+}
+
+.note-form, .note-table {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  margin: 20px 0;
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;  /* Устанавливаем максимальную ширину */
+}
+
+input[type="text"], input[type="checkbox"], button {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+button {
+  cursor: pointer;
+  background-color: #6200ea;
+}
+
+button:hover {
+  background-color: #3700b3;
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 12px;
+  background-color: #6200ea;
+  color: #fff;
+  margin: 2px;
+}
+
+.note-item td {
+  padding: 10px;
+}
+
+.note-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.note-table th, .note-table td {
+  border: 1px solid #333;
+  padding: 10px;
+  text-align: left;
+}
+
+.note-table th {
+  background-color: #333;
+}
+
+.pagination {
+  margin: 20px 0;
+  text-align: center;  /* Центрируем пагинацию */
+}
+
+.pagination button {
+  margin: 5px;
+}
