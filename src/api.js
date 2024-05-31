@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://158.160.171.1:8080/api/v1/Note',
+  baseURL: 'https://bbanr7pkbo7oql8f31si.containers.yandexcloud.net/api/v1/Note',
   headers: {
     'Content-Type': 'application/json',
   }
