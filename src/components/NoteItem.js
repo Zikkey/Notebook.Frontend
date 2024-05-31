@@ -1,7 +1,7 @@
 import React from 'react';
 import { updateNote } from '../api';
 
-const NoteItem = ({ note, onDelete, onUpdate }) => {
+const NoteItem = ({ note, onDelete, onUpdate, onEdit }) => {
     const handleToggleDone = () => {
         updateNote({ ...note, isDone: !note.isDone }).then(() => {
             onUpdate();
@@ -23,6 +23,7 @@ const NoteItem = ({ note, onDelete, onUpdate }) => {
                 />
             </td>
             <td>
+                <button onClick={() => onEdit(note)}>Edit</button>
                 <button onClick={() => onDelete(note.id)}>Delete</button>
             </td>
         </tr>

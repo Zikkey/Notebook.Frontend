@@ -7,7 +7,7 @@ const api = axios.create({
   }
 });
 
-export const getNotes = (page = 1, size = 10) => api.get(`/get_all?page=${page}&size=${size}`);
+export const getNotes = () => api.get('/get_all');
 export const getNote = (id) => api.get(`/get?id=${id}`);
 export const createNote = (note) => api.post('/create', note);
 export const updateNote = (note) => api.post('/update', note);
